@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <style>
+      div {
+        text-align: center;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="home.css" rel="stylesheet" />
+    <title>The Haunting of Ypsilon 14</title>
+  </head>
+  <body>
+    <h3 class="text">The haunting of</h3>
+    <h1 class="text">Ypsilon 14</h1>
+    <p class="text">A Survival Horror Text Game in Space</p>
+    <div>
+      <div>
+        <audio
+          src="audio/mixkit-horror-deep-drum-heartbeat-559.wav"
+          autostart="false"
+        ></audio>
+
+        <button class="buttonEnterTheStation" onclick="playAndRedirect()">
+          Enter the Station
+        </button>
+      </div>
+    </div>
+    <script>
+      function clickCreCharSound() {
+        let sound = document.querySelector("audio");
+        sound.play();
+      }
+
+      const playAndRedirect = () => {
+        clickCreCharSound();
+        setTimeout(() => {
+          window.location.href = "intro.html";
+        }, 3000);
+      };
+    </script>
+  </body>
+</html>
