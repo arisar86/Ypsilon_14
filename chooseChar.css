@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  color: rgb(69, 241, 7);
+}
+
+body {
+  animation: transitionIn 3s;
+  background-color: black;
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  padding: 50px;
+}
+h1 {
+  font-size: 200px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 300px;
+}
+h3 {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+/*body {
+  animation: transitionIn 3s;
+}*/
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.charactersContainer {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-rows: 5.7cm 0.5cm 1.5cm 0.5cm 10cm;
+  grid-template-columns: 5cm 5cm 5cm;
+}
+
+.item-1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  height: 5.7cm;
+  width: 5cm;
+
+  border: 3px solid rgb(69, 241, 7);
+}
+
+#portraitJoey {
+  padding-top: 20px;
+  width: 4cm;
+  height: 5cm;
+}
+
+.buttonJoey {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  background-color: #efefef;
+  width: 5cm;
+  height: 1.5cm;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.item-1b {
+  font-size: 12px;
+  color: rgb(69, 241, 7);
+  text-align: start;
+  font-family: "Orbitron", sans-serif;
+  padding: 5px;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  height: 8.5cm;
+  width: 5cm;
+  border: 3px solid rgb(69, 241, 7);
+}
+
+.item-2 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  height: 5.7cm;
+  width: 5cm;
+
+  border: 3px solid rgb(69, 241, 7);
+}
+
+#portraitSarah {
+  padding-top: 20px;
+  width: 4cm;
+  height: 5cm;
+}
+
+.buttonSarah {
+  align-self: end;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  background-color: #efefef;
+  width: 5cm;
+  height: 1.5cm;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.item-2b {
+  font-size: 12px;
+  color: rgb(69, 241, 7);
+  text-align: start;
+  font-family: "Orbitron", sans-serif;
+  padding: 5px;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  height: 9.3cm;
+  width: 5cm;
+
+  border: 3px solid rgb(69, 241, 7);
+}
+
+.item-3 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  height: 5.7cm;
+  width: 5cm;
+
+  border: 3px solid rgb(69, 241, 7);
+}
+
+#portraitLudwig {
+  padding-top: 20px;
+  width: 4cm;
+  height: 5cm;
+}
+
+.buttonLudwig {
+  align-self: end;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  background-color: #efefef;
+  width: 5cm;
+  height: 1.5cm;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.item-3b {
+  font-size: 12px;
+  color: rgb(69, 241, 7);
+  text-align: start;
+  font-family: "Orbitron", sans-serif;
+  padding: 5px;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  height: 8.4cm;
+  width: 5cm;
+
+  border: 3px solid rgb(69, 241, 7);
+}

@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <style>
+      div {
+        text-align: center;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="chooseChar.css" rel="stylesheet" />
+    <title>Choose your Character</title>
+  </head>
+  <body>
+    <h3 class="text">Choose Character</h3>
+    <div class="charactersContainer">
+      <audio
+        src="audio/mixkit-horror-deep-drum-heartbeat-559.wav"
+        autostart="false"
+      ></audio>
+
+      <button class="buttonJoey" onclick="playAndRedirect()">
+        Joey Schultz
+      </button>
+
+      <button class="buttonSarah" onclick="playAndRedirect()">
+        Sarah Chao
+      </button>
+
+      <button class="buttonLudwig" onclick="playAndRedirect()">
+        Ludwig B-16
+      </button>
+
+      <div class="Joey item-1">
+        <img
+          id="portraitJoey"
+          src="/Users/ari86/Desktop/The Haunting of Ypsilon 14/images/portrait_Joey.png"
+        />
+      </div>
+      <div class="Joey info item-1b">
+        You are 32 years old, a never do well with a talent of getting into
+        trouble. You are trained as an mechanic and worked before with heavy
+        machinery and in zero-g. You are not the smartest but your agility,
+        strength and witts seem to always make you slip out in the right
+        moments. You took the job as a miner on Ypsilon-14 to escape an
+        interstellar judical conviction. Your collegues don't know about that
+        and it is up to you as a player to make up what crime you commited.
+      </div>
+      <div class="Sarah item-2">
+        <img
+          id="portraitSarah"
+          src="/Users/ari86/Desktop/The Haunting of Ypsilon 14/images/porttait_Sarah.png"
+        />
+      </div>
+      <div class="Sarah info item-2b">
+        You have just completed your studies and applied for this unusual job on
+        Ypsilon-14 because you heard that your great idol Dr. Giovanni is
+        conducting secret research on this colony. You hope to get closer to
+        him, in the best case, to complete your doctorate under his guidance.
+        You are an expert in botany and trained in geology. You have a quirky
+        personality and people often often think you are immature or naive, but
+        you know exactly what you want and, thanks to your high intellect, know
+        exactly how to get it.
+      </div>
+      <div class="Ludwig item-3">
+        <img
+          id="portraitLudwig"
+          src="/Users/ari86/Desktop/The Haunting of Ypsilon 14/images/portrait_Ludwig.png"
+        />
+      </div>
+      <div class="Ludwig info item-3b">
+        You are an android of the B-Series that might be seen as outtaded but is
+        still put to use on many colonies and mining stations. You are hired by
+        Lyonell Corp. as an engineer to assist the miners and scientists on
+        Ypsilon-14 but your protocol also says to ensure that all “test
+        subjects“ (whatever that means) perform their tasks and under no
+        circumstance must interfer with Dr.Giovannis research, although you
+        don't know what it really entails.
+      </div>
+    </div>
+    <script>
+      function clickCreCharSound() {
+        let sound = document.querySelector("audio");
+        sound.play();
+      }
+
+      const playAndRedirect = () => {
+        clickCreCharSound();
+        /*setTimeout(() => {
+            window.location.href = "";
+          }, 3000);*/
+      };
+    </script>
+  </body>
+</html>

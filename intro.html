@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <style>
+      div {
+        text-align: center;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="intro.css" rel="stylesheet" />
+    <title>Intro</title>
+  </head>
+  <body>
+    <p class="text">
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text
+      Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
+      Text Intro Text Intro Text Intro Text Intro Text
+    </p>
+
+    <div>
+      <div>
+        <audio
+          src="audio/mixkit-horror-deep-drum-heartbeat-559.wav"
+          autostart="false"
+        ></audio>
+
+        <button class="buttonChooseCharacter" onclick="playAndRedirect()">
+          Choose Character
+        </button>
+      </div>
+    </div>
+    <script>
+      function clickCreCharSound() {
+        let sound = document.querySelector("audio");
+        sound.play();
+      }
+
+      const playAndRedirect = () => {
+        clickCreCharSound();
+        setTimeout(() => {
+          window.location.href = "chooseChar.html";
+        }, 3000);
+      };
+    </script>
+  </body>
+</html>
