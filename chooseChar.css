@@ -27,10 +27,6 @@ h3 {
   padding-bottom: 100px;
 }
 
-/*body {
-  animation: transitionIn 3s;
-}*/
-
 @keyframes transitionIn {
   from {
     opacity: 0;
@@ -72,8 +68,8 @@ h3 {
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 1;
-  text-align: center;
   font-family: "Orbitron", sans-serif;
+  text-align: center;
   background-color: #efefef;
   width: 5cm;
   height: 1.5cm;
@@ -86,13 +82,12 @@ h3 {
   font-size: 12px;
   color: rgb(69, 241, 7);
   text-align: start;
-  font-family: "Orbitron", sans-serif;
   padding: 5px;
   grid-row-start: 5;
   grid-row-end: 6;
   grid-column-start: 1;
   grid-column-end: 1;
-  height: 8.5cm;
+  height: 8.4cm;
   width: 5cm;
   border: 3px solid rgb(69, 241, 7);
 }
@@ -117,11 +112,11 @@ h3 {
 .buttonSarah {
   align-self: end;
   text-align: center;
-  font-family: "Orbitron", sans-serif;
   background-color: #efefef;
   width: 5cm;
   height: 1.5cm;
   padding: 10px;
+  font-family: "Orbitron", sans-serif;
   font-size: 20px;
   cursor: pointer;
   grid-row-start: 3;
@@ -134,13 +129,13 @@ h3 {
   font-size: 12px;
   color: rgb(69, 241, 7);
   text-align: start;
-  font-family: "Orbitron", sans-serif;
+
   padding: 5px;
   grid-row-start: 5;
   grid-row-end: 5;
   grid-column-start: 2;
   grid-column-end: 2;
-  height: 9.3cm;
+  height: 8.8cm;
   width: 5cm;
 
   border: 3px solid rgb(69, 241, 7);
@@ -166,11 +161,12 @@ h3 {
 .buttonLudwig {
   align-self: end;
   text-align: center;
-  font-family: "Orbitron", sans-serif;
+
   background-color: #efefef;
   width: 5cm;
   height: 1.5cm;
   padding: 10px;
+  font-family: "Orbitron", sans-serif;
   font-size: 20px;
   cursor: pointer;
   grid-row-start: 3;
@@ -183,7 +179,7 @@ h3 {
   font-size: 12px;
   color: rgb(69, 241, 7);
   text-align: start;
-  font-family: "Orbitron", sans-serif;
+
   padding: 5px;
   grid-row-start: 5;
   grid-row-end: 5;

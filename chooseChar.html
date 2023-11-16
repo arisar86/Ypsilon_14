@@ -22,15 +22,15 @@
         autostart="false"
       ></audio>
 
-      <button class="buttonJoey" onclick="playAndRedirect()">
+      <button class="buttonJoey" onclick="playAndRedirectJoey()">
         Joey Schultz
       </button>
 
-      <button class="buttonSarah" onclick="playAndRedirect()">
+      <button class="buttonSarah" onclick="playAndRedirectSarah()">
         Sarah Chao
       </button>
 
-      <button class="buttonLudwig" onclick="playAndRedirect()">
+      <button class="buttonLudwig" onclick="playAndRedirectLudwig()">
         Ludwig B-16
       </button>
 
@@ -61,8 +61,8 @@
         conducting secret research on this colony. You hope to get closer to
         him, in the best case, to complete your doctorate under his guidance.
         You are an expert in botany and trained in geology. You have a quirky
-        personality and people often often think you are immature or naive, but
-        you know exactly what you want and, thanks to your high intellect, know
+        personality and people often think you are immature or naive, but you
+        know exactly what you want and, thanks to your high intellect, know
         exactly how to get it.
       </div>
       <div class="Ludwig item-3">
@@ -78,7 +78,7 @@
         Ypsilon-14 but your protocol also says to ensure that all “test
         subjects“ (whatever that means) perform their tasks and under no
         circumstance must interfer with Dr.Giovannis research, although you
-        don't know what it really entails.
+        don't know what the research really entails.
       </div>
     </div>
     <script>
@@ -87,11 +87,25 @@
         sound.play();
       }
 
-      const playAndRedirect = () => {
+      const playAndRedirectJoey = () => {
         clickCreCharSound();
-        /*setTimeout(() => {
-            window.location.href = "";
-          }, 3000);*/
+        setTimeout(() => {
+          window.location.href = "workspaceJoey.html";
+        }, 3000);
+      };
+
+      const playAndRedirectSarah = () => {
+        clickCreCharSound();
+        setTimeout(() => {
+          window.location.href = "workspaceSarah.html";
+        }, 3000);
+      };
+
+      const playAndRedirectLudwig = () => {
+        clickCreCharSound();
+        setTimeout(() => {
+          window.location.href = "workspaceLudwig.html";
+        }, 3000);
       };
     </script>
   </body>
