@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  color: rgb(69, 241, 7);
+}
+
+body {
+  background-color: black;
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  padding: 50px;
+}
+h1 {
+  font-size: 200px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 250px;
+}
+h3 {
+  font-size: 50px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.buttonEnterTheStation {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  background-color: #efefef;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
