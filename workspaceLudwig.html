@@ -11,27 +11,52 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pixelify+Sans&display=swap"
       rel="stylesheet"
     />
-    <link href="workspaceLudwig.css" rel="stylesheet" />
+    <link href="workspace.css" rel="stylesheet" />
     <title>The Workspace</title>
   </head>
   <body>
-    <h3 class="text">The Workspace</h3>
+    <h1 class="text">The Workspace</h1>
 
-    <h1 class="text">
-        Work boots clang and echo through the workspace of the mining station. The
-        air is damp and heavy and you are immediately concerned about your health
-        breathing that air 24/7. On the left wall cubies are lining up, probably
-        stowing the gear of the workers. Just next to the cubies a cramped
-        corridor leads to the crews quarters. To your right a massive generator
-        sits in one corner by an industrial vent alongside a computer terminal
-        slowly bleeping out lines of data. In the opposite corner, white sheet
-        plastic and sterile lightning marks a semi-permanent Medbay. The floor in
-        the middle of the room opens up into a yawning pit, with a mechanised
-        drill and pump system penetrating down into the dark mine shaft. A rather
-        spartan freight elevator carries miners to and from the mine entrance.
-      </h1>
-  
-      <p class="text">What do you want to do first?</p2>
+    <h2 class="text">
+      Work boots clang and echo through the workspace of the mining station. The
+      air is damp and heavy. Your your hardware runs automatic tests on the air
+      that fills your artificial lungs as you breath it in. Red numbers flashing
+      on your Retina display inform you about the low oxygen quality in the
+      room. You switch off the warning signal and look around. On the left wall
+      cubies are lining up, probably stowing the gear of the workers. Just next
+      to the cubies a cramped corridor leads to the crews quarters. To your
+      right a massive generator sits in one corner by an industrial vent
+      alongside a computer terminal slowly bleeping out lines of data. In the
+      opposite corner, white sheet plastic and sterile lightning marks a
+      semi-permanent Medbay. The floor in the middle of the room opens up into a
+      yawning pit, with a mechanised drill and pump system penetrating down into
+      the dark mine shaft. A rather spartan freight elevator carries miners to
+      and from the mine entrance.
+    </h2>
+
+    <h3 class="text">What do you want to do first?</h3>
+
+    <div class="btn-group">
+      <button class="buttonCubies" onclick="playAndRedirectCubies()">
+        Check out the Cubies
+      </button>
+
+      <button class="buttonCrewQuarters" onclick="playAndRedirectQuarters()">
+        Go to the Crews Quarters
+      </button>
+
+      <button class="buttonTerminal" onclick="playAndRedirectTerminal()">
+        Check out the Computer Terminal
+      </button>
+
+      <button class="buttonMedbay" onclick="playAndRedirectMedbay()">
+        Go to the Medbay
+      </button>
+
+      <button class="buttonElevator" onclick="playAndRedirectElevator()">
+        Take a closer look at the Elevator
+      </button>
+    </div>
 
     <script>
       function clickCreCharSound() {
@@ -39,7 +64,35 @@
         sound.play();
       }
 
-      const playAndRedirect = () => {
+      const playAndRedirectCubies = () => {
+        clickCreCharSound();
+        /*setTimeout(() => {
+            window.location.href = "";
+          }, 3000);*/
+      };
+
+      const playAndRedirectQuarters = () => {
+        clickCreCharSound();
+        /*setTimeout(() => {
+            window.location.href = "";
+          }, 3000);*/
+      };
+
+      const playAndRedirectTerminal = () => {
+        clickCreCharSound();
+        /*setTimeout(() => {
+            window.location.href = "";
+          }, 3000);*/
+      };
+
+      const playAndRedirectMedbay = () => {
+        clickCreCharSound();
+        /*setTimeout(() => {
+            window.location.href = "";
+          }, 3000);*/
+      };
+
+      const playAndRedirectElevator = () => {
         clickCreCharSound();
         /*setTimeout(() => {
             window.location.href = "";

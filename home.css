@@ -33,6 +33,7 @@ p {
 }
 
 .buttonEnterTheStation {
+  font-family: "Orbitron", sans-serif;
   text-align: center;
   background-color: #efefef;
   padding: 10px;
