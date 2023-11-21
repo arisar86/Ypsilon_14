@@ -14,6 +14,48 @@
     <link href="workspace.css" rel="stylesheet" />
     <title>The Workspace</title>
   </head>
+
+  <script>
+    function clickCreCharSound() {
+      let sound = document.querySelector("audio");
+      sound.play();
+    }
+
+    const playAndRedirectCubies = () => {
+      clickCreCharSound();
+      setTimeout(() => {
+        window.location.href = "cubies.html";
+      }, 3000);
+    };
+
+    const playAndRedirectQuarters = () => {
+      clickCreCharSound();
+      setTimeout(() => {
+        window.location.href = "quarters.html";
+      }, 3000);
+    };
+
+    const playAndRedirectTerminal = () => {
+      clickCreCharSound();
+      setTimeout(() => {
+        window.location.href = "terminal.html";
+      }, 3000);
+    };
+
+    const playAndRedirectMedbay = () => {
+      clickCreCharSound();
+      setTimeout(() => {
+        window.location.href = "medbay.html";
+      }, 3000);
+    };
+
+    const playAndRedirectElevator = () => {
+      clickCreCharSound();
+      setTimeout(() => {
+        window.location.href = "elevator.html";
+      }, 3000);
+    };
+  </script>
   <body>
     <h1 class="text">The Workspace</h1>
 
@@ -57,47 +99,5 @@
         Take a closer look at the Elevator
       </button>
     </div>
-
-    <script>
-      function clickCreCharSound() {
-        let sound = document.querySelector("audio");
-        sound.play();
-      }
-
-      const playAndRedirectCubies = () => {
-        clickCreCharSound();
-        /*setTimeout(() => {
-            window.location.href = "";
-          }, 3000);*/
-      };
-
-      const playAndRedirectQuarters = () => {
-        clickCreCharSound();
-        /*setTimeout(() => {
-            window.location.href = "";
-          }, 3000);*/
-      };
-
-      const playAndRedirectTerminal = () => {
-        clickCreCharSound();
-        /*setTimeout(() => {
-            window.location.href = "";
-          }, 3000);*/
-      };
-
-      const playAndRedirectMedbay = () => {
-        clickCreCharSound();
-        /*setTimeout(() => {
-            window.location.href = "";
-          }, 3000);*/
-      };
-
-      const playAndRedirectElevator = () => {
-        clickCreCharSound();
-        /*setTimeout(() => {
-            window.location.href = "";
-          }, 3000);*/
-      };
-    </script>
   </body>
 </html>

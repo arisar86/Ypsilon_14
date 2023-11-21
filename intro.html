@@ -14,6 +14,20 @@
     <link href="intro.css" rel="stylesheet" />
     <title>Intro</title>
   </head>
+
+  <script>
+    function clickCreCharSound() {
+      let sound = document.querySelector("audio");
+      sound.play();
+    }
+
+    const playAndRedirect = () => {
+      clickCreCharSound();
+      setTimeout(() => {
+        window.location.href = "chooseChar.html";
+      }, 3000);
+    };
+  </script>
   <body>
     <p class="text">
       Intro Text Intro Text Intro Text Intro Text Intro Text Intro Text Intro
@@ -58,18 +72,5 @@
         </button>
       </div>
     </div>
-    <script>
-      function clickCreCharSound() {
-        let sound = document.querySelector("audio");
-        sound.play();
-      }
-
-      const playAndRedirect = () => {
-        clickCreCharSound();
-        setTimeout(() => {
-          window.location.href = "chooseChar.html";
-        }, 3000);
-      };
-    </script>
   </body>
 </html>

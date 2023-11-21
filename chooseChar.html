@@ -14,6 +14,34 @@
     <link href="chooseChar.css" rel="stylesheet" />
     <title>Choose your Character</title>
   </head>
+
+  <script>
+    function clickCreCharSound() {
+      let sound = document.querySelector("audio");
+      sound.play();
+    }
+
+    const playAndRedirectJoey = () => {
+      clickCreCharSound();
+      setTimeout(() => {
+        window.location.href = "workspaceJoey.html";
+      }, 3000);
+    };
+
+    const playAndRedirectSarah = () => {
+      clickCreCharSound();
+      setTimeout(() => {
+        window.location.href = "workspaceSarah.html";
+      }, 3000);
+    };
+
+    const playAndRedirectLudwig = () => {
+      clickCreCharSound();
+      setTimeout(() => {
+        window.location.href = "workspaceLudwig.html";
+      }, 3000);
+    };
+  </script>
   <body>
     <h3 class="text">Choose Character</h3>
     <div class="charactersContainer">
@@ -42,7 +70,7 @@
       </div>
       <div class="Joey info item-1b">
         You are 32 years old, a never do well with a talent of getting into
-        trouble. You are trained as an mechanic and worked before with heavy
+        trouble. You are trained as a mechanic and worked before with heavy
         machinery and in zero-g. You are not the smartest but your agility,
         strength and witts seem to always make you slip out in the right
         moments. You took the job as a miner on Ypsilon-14 to escape an
@@ -81,32 +109,5 @@
         don't know what the research really entails.
       </div>
     </div>
-    <script>
-      function clickCreCharSound() {
-        let sound = document.querySelector("audio");
-        sound.play();
-      }
-
-      const playAndRedirectJoey = () => {
-        clickCreCharSound();
-        setTimeout(() => {
-          window.location.href = "workspaceJoey.html";
-        }, 3000);
-      };
-
-      const playAndRedirectSarah = () => {
-        clickCreCharSound();
-        setTimeout(() => {
-          window.location.href = "workspaceSarah.html";
-        }, 3000);
-      };
-
-      const playAndRedirectLudwig = () => {
-        clickCreCharSound();
-        setTimeout(() => {
-          window.location.href = "workspaceLudwig.html";
-        }, 3000);
-      };
-    </script>
   </body>
 </html>

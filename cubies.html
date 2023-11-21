@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <style>
+      div {
+        text-align: center;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="cubies.css" rel="stylesheet" />
+    <title>The Cubies</title>
+  </head>
+
+  <script>
+    function clickCreCharSound() {
+      let sound = document.querySelector("audio");
+      sound.play();
+    }
+
+    const playAndRedirectCubies = () => {
+      clickCreCharSound();
+      /*setTimeout(() => {
+          window.location.href = "";
+        }, 3000);*/
+    };
+
+    const playAndRedirectQuarters = () => {
+      clickCreCharSound();
+      /*setTimeout(() => {
+          window.location.href = "";
+        }, 3000);*/
+    };
+
+    const playAndRedirectTerminal = () => {
+      clickCreCharSound();
+      /*setTimeout(() => {
+          window.location.href = "";
+        }, 3000);*/
+    };
+
+    const playAndRedirectMedbay = () => {
+      clickCreCharSound();
+      /*setTimeout(() => {
+          window.location.href = "";
+        }, 3000);*/
+    };
+
+    const playAndRedirectElevator = () => {
+      clickCreCharSound();
+      /*setTimeout(() => {
+          window.location.href = "";
+        }, 3000);*/
+    };
+  </script>
+
+  <body>
+    <h1 class="text">The Cubies</h1>
+
+    <h2 class="text"></h2>
+
+    <h3 class="text">What do you want to do next?</h3>
+
+    <div class="btn-group">
+      <button class="buttonCubies" onclick="playAndRedirectCubies()"></button>
+
+      <button
+        class="buttonCrewQuarters"
+        onclick="playAndRedirectQuarters()"
+      ></button>
+
+      <button
+        class="buttonTerminal"
+        onclick="playAndRedirectTerminal()"
+      ></button>
+
+      <button class="buttonMedbay" onclick="playAndRedirectMedbay()"></button>
+
+      <button
+        class="buttonElevator"
+        onclick="playAndRedirectElevator()"
+      ></button>
+    </div>
+  </body>
+</html>
