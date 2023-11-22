@@ -16,13 +16,13 @@
   </head>
 
   <script>
-    function clickCreCharSound() {
+    function clickSound() {
       let sound = document.querySelector("audio");
       sound.play();
     }
 
     const playAndRedirect = () => {
-      clickCreCharSound();
+      clickSound();
       setTimeout(() => {
         window.location.href = "intro.html";
       }, 3000);

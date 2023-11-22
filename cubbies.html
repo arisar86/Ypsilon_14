@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link href="station.css" rel="stylesheet" />
-    <title>The Workspace</title>
+    <title>The Cubbies</title>
   </head>
 
   <script>
@@ -21,11 +21,31 @@
       sound.play();
     }
 
-    const playAndRedirectCubbies = () => {
+    function tryAgain() {
+      // Generate a random number between 1 and 6 (representing a dice roll)
+      var diceRoll = Math.floor(Math.random() * 6) + 1;
+
+      // Get the element where the outcome text will be displayed
+      var outcomeElement = document.getElementById("outcomeText");
+
+      // Get the "Try again!" button element
+      var tryAgainBtn = document.getElementById("tryAgainBtn");
+
+      // Update the text based on the outcome of the dice roll
+      if (diceRoll % 2 === 0) {
+        outcomeElement.innerText =
+          "On closer inspection you recognize one of the mining tools, a handheld laser cutter and one vaccsuit are missing. Not sure what to make of it though.";
+      } else {
+        outcomeElement.innerText =
+          "Nothing out of the ordinary. Everything as it seems.";
+      }
+
+      // Hide the "Try again!" button
+      tryAgainBtn.style.display = "none";
+    }
+    const playAndTryAgain = () => {
       clickSound();
-      setTimeout(() => {
-        window.location.href = "cubbies.html";
-      }, 300);
+      tryAgain();
     };
 
     const playAndRedirectQuarters = () => {
@@ -58,23 +78,15 @@
   </script>
 
   <body>
-    <h1 class="text">The Workspace</h1>
+    <h1 class="text">The Cubbies</h1>
 
-    <h2 class="text">
-      Work boots clang and echo through the workspace of the mining station. The
-      air is damp and heavy, a mix of sweat and oily machinery. You take a deep
-      breath and look around. On the left wall cubies are lining up, probably
-      stowing the gear of the workers. Just next to the cubbies a cramped
-      corridor leads to the crews quarters. To your right a massive generator
-      sits in one corner by an industrial vent alongside a computer terminal
-      slowly bleeping out lines of data. In the opposite corner, white sheet
-      plastic and sterile lightning marks a semi-permanent Medbay. The floor in
-      the middle of the room opens up into a yawning pit, with a mechanised
-      drill and pump system penetrating down into the dark mine shaft. A rather
-      spartan freight elevator carries miners to and from the mine entrance.
+    <h2 class="text" id="outcomeText">
+      What you would probably expect. Overalls, flashlights, short-range radios,
+      handheld mining tools and vaccsuits squeezed into the cubbies. On the left
+      a narrow corridor leads to the crews quarters. You can hear voices.
     </h2>
 
-    <h3 class="text">What do you want to do first?</h3>
+    <h3 class="text">What do you want to do next?</h3>
 
     <div class="btn-group">
       <audio
@@ -82,7 +94,9 @@
         autostart="false"
       ></audio>
 
-      <button onclick="playAndRedirectCubbies()">Check out the Cubbies</button>
+      <button id="tryAgainBtn" onclick="playAndTryAgain ()">
+        Try again! Am I missing something here?!
+      </button>
 
       <button onclick="playAndRedirectQuarters()">
         Go to the Crews Quarters

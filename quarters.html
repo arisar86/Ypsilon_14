@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <style>
+      div {
+        text-align: center;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="station.css" rel="stylesheet" />
+    <title>The Crews Quarters</title>
+  </head>
+
+  <script>
+    function clickSound() {
+      let sound = document.querySelector("audio");
+      sound.play();
+    }
+
+    const playAndRedirectMess = () => {
+      clickSound();
+      setTimeout(() => {
+        window.location.href = "mess.html";
+      }, 300);
+    };
+
+    const playAndRedirectWorkspace = () => {
+      clickSound();
+      setTimeout(() => {
+        window.location.href = "workspaceJoey.html";
+      }, 300);
+    };
+
+    const playAndRedirectBunks = () => {
+      clickSound();
+      setTimeout(() => {
+        window.location.href = "bunks.html";
+      }, 300);
+    };
+  </script>
+
+  <body>
+    <h1 class="text">The Crews Quarters</h1>
+
+    <h2 class="text">
+      Along the corridor there are simple bunks in a series of 10 small
+      individual rooms. The corridor ends in the mess, a communal eating area.
+    </h2>
+
+    <h3 class="text">What do you want to do next?</h3>
+
+    <div class="btn-group">
+      <audio
+        src="/Users/ari86/Desktop/The Haunting of Ypsilon 14/audio/button-press-keyboard-joshua-chivers-2-2-00-00.mp3"
+        autostart="false"
+      ></audio>
+
+      <button onclick="playAndRedirectMess()">
+        Go straight to to the mess
+      </button>
+
+      <button onclick="playAndRedirectBunks()">Check out the bunks</button>
+
+      <button onclick="playAndRedirectWorkspace()">
+        Go back to the workspace
+      </button>
+    </div>
+  </body>
+</html>
